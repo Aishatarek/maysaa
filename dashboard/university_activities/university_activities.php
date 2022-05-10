@@ -59,7 +59,6 @@ class UA
         }
 
         if (isset($title) && isset($description) && isset($image) && isset($publication_date)) {
-            echo $image2 . $image3 . $image4 . $image5;
             $this->db->con->query("INSERT INTO university_activities(title,description,image,image2,image3,image4,image5,publication_date) VALUES($title,$description,$image,$image2,$image3,$image4,$image5,$publication_date)");
         }
     }
